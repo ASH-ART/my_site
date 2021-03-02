@@ -60,10 +60,13 @@ a:hover
 }
 footer
 {
+	position: fixed;
+	bottom: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	width: 100%;
 }
 nav
 {
@@ -72,7 +75,19 @@ nav
 	/*justify-content:  ;*/
 	z-index: 3;
 }
-#Nav
+#Contact
+{
+	position: absolute;
+	top: 5px;
+}
+
+#Contact:hover
+{
+	background-color: #BEBEBE;
+	width: 5%;
+
+}
+#Nav, #Contact
 {
 	width: 35%;
 	padding-top: 5px;
@@ -83,7 +98,6 @@ nav
 	justify-content: space-between;
 	list-style-type: none;
 	border-radius: 25px;
-	
 }
 #Top
 {
@@ -92,16 +106,30 @@ nav
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+article
+{
+	position: fixed;
+	position: absolute;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	flex-direction: row;
+}
 .image
 {
+	
 	height: 10%;
 	width: 10%;
 	border-radius: 15px;
+	-webkit-transform: translateX(+5%);
+	-webkit-transition : all 0.4s;
 }
 .image:hover
 {
-	height: 25%;
-	width: 25%;
+	height: 23%;
+	width: 23%;
 	opacity: 100%;
 	z-index: 5;
 	-webkit-transform: translateX(+5%);
@@ -115,4 +143,10 @@ nav
   	-o-transition: all 0.4s;
   	-moz-transition: all 0.4s;
   	transition: all 0.4s;
+}
+aside
+{
+	position: absolute;
+	right: 5px;
+	top: 25px;
 }
