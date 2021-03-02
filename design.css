@@ -1,0 +1,118 @@
+@font-face
+{
+	font-family: comfortaa;
+	src :url('fonts/Comfortaa/Comfortaa-Regular.ttf');
+}
+@font-face
+{
+	font-family: comfortaa-bold;
+	src : url('Pages Secondaires/fonts/Comfortaa/Comfortaa-Bold.ttf');
+	font-weight: bold;
+}
+@font-face
+{
+	font-family: comfortaa-light;
+	src : url('Pages Secondaires/fonts/Comfortaa/Comfortaa-Light.ttf');
+	font-weight: lighter;
+}
+@font-face
+{
+	font-family: kielo;
+	src : url('fonts/Kielo/Kielo-Regular.ttf');
+}
+body
+{
+	background-color: #282828;
+	font-family: comfortaa;
+}
+p,h1
+{
+	color: #ffff;
+}
+
+h1
+{
+	font-family: kielo;
+}
+.RS
+{
+	text-decoration: none;
+	color: #D3D3D3 ;
+}
+a
+{
+	text-decoration: none;
+	color: #303030;
+}
+a:hover
+{
+	font-family: comfortaa-bold;
+	text-decoration: underline;
+}
+#Réseaux_sociaux
+{
+	color: #ffff;
+	width: 75%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: line;
+	justify-content: space-between;
+}
+footer
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+nav
+{
+	width : 40%;
+	display: flex;
+	/*justify-content:  ;*/
+	z-index: 3;
+}
+#Nav
+{
+	width: 35%;
+	padding-top: 5px;
+	padding: 10px;
+	background-color: rgba(200,200,200,10);
+	display: flex;
+	flex-direction: line;
+	justify-content: space-between;
+	list-style-type: none;
+	border-radius: 25px;
+	
+}
+#Top
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.image
+{
+	height: 10%;
+	width: 10%;
+	border-radius: 15px;
+}
+.image:hover
+{
+	height: 25%;
+	width: 25%;
+	opacity: 100%;
+	z-index: 5;
+	-webkit-transform: translateX(+5%);
+  	-moz-transform: translateX(+5%);
+  	-ms-transform: translateX(+5%);
+ 	-o-transform: translateX(+5%);
+  	transform: translateX(+5%);
+  	border-radius: 31px;
+
+  	-webkit-transition: all 0.4s;
+  	-o-transition: all 0.4s;
+  	-moz-transition: all 0.4s;
+  	transition: all 0.4s;
+}
