@@ -108,12 +108,13 @@ nav
 }
 article
 {
-	position: fixed;
-	position: absolute;
+	/*position: fixed;*/
+	/*position: absolute;*/
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	flex-wrap: wrap;
 
 	flex-direction: row;
 }
@@ -122,9 +123,12 @@ article
 	
 	height: 10%;
 	width: 10%;
+	min-width: 10%;
+
 	border-radius: 15px;
 	-webkit-transform: translateX(+5%);
 	-webkit-transition : all 0.4s;
+	
 }
 .image:hover
 {
